@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Магазин косметики</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+	<script src="js/jquery-2.0.2.min.js"></script>
+</head>
+<body> 
+	<div class="shadow_body">
+		<header class="header-first wrapper">
+			<div class="burger">
+				<a href="#" class="burger__button">
+					<span class="burger__lines"></span>
+				</a>
+			</div>
+			<div class="burger-menu">
+				<nav class="menu header-first_menu">
+					<ul class="menu__list">
+						<li class="menu__item"><i class="fa fa-scissors burger-menu__icon"></i></li>
+						<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+						<li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+						<li class="menu__item"><a href="uslugi.html" class="menu__link">Каталог услуг</a></li>
+						<li class="menu__item"><a href="shop.html" class="menu__link">Магазин косметики</a></li>
+						<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+						<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+						<li class="menu__item"><i class="fa fa-scissors burger-menu__icon"></i></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="overlay"></div>
+			<div class="header-first__phone">
+				<i class="fa fa-phone fa header-first__icon"></i>
+				<span class="header-first__number">+375 (29) 612-13-32</span>
+			</div>
+			<div class="header-first__address">
+				<a href="https://goo.gl/maps/73nk6n2J2C5ci85p6" class="header-first__location">
+					<i class="fa fa-map-marker fa header-first__icon"></i>
+					<span>Киселёва 10, Минск</span>
+				</a>
+			</div>				
+			<div class="social">
+				<ul class="social__icons">
+					<li class="social__button">
+						<a href="https://www.facebook.com/" target="blank" title="facebook" class="social__facebook">
+							<i class="fa fa-facebook-f social__icon"></i>
+						</a>
+					</li>
+					<li class="social__button">
+						<a href="https://vk.com/" target="blank" title="ВКонтакте" class="social__vk">
+							<i class="fa fa-vk social__icon"></i>
+						</a>
+					</li>
+					<li class="social__button">
+						<a href="https://www.pinterest.com/" target="blank" title="pinterest" class="social__pinterest">
+							<i class="fa fa-pinterest-p social__icon"></i>
+						</a>
+					</li>
+					<li class="social__button">
+						<a href="https://www.instagram.com/prestige_plus/?hl=ru" target="blank" title="instagram" class="social__instagram">
+							<i class="fa fa-instagram social__icon"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<header class="header clearfix wrapper">                           
+			<div class="header__logo">
+				<a href="index.html" class="header__logo-link">
+					<img src="img/logo2.png" alt="Логотип" width="220" height="50" class="header__logo-img">
+				</a>
+			</div>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+					<li class="menu__item"><a href="uslugi.html" class="menu__link">Каталог услуг</a></li>
+					<li class="menu__item"><a href="shop.html" class="menu__link">Магазин косметики</a></li>
+					<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header-button">
+				<a href="#" class="button header-button__link" onClick="PopUpShow();">
+					<i class="fa fa-check-square-o header-button__icon"></i>
+					Онлайн запись
+				</a>
+			</div>
+		</header>
+		<main class="wrapper">
+			<h3 class="shop__title">
+				Данная страница находится в разработке. Скоро здесь появится много всего интересного!
+			</h3>
+			<div class="shop__product">
+				<div class="shop__spinner">
+				<img src="img/shop-img-1.jpg" width="260" height="160" alt="Косметика" class="shop__img-one">
+				<img src="img/shop-img-2.jpg" width="273" height="160" alt="Косметика" class="shop__img-two">
+				<img src="img/shop-img-3.jpg" width="300" height="160" alt="Косметика" class="shop__img-three">
+				<img src="img/shop-img-4.jpg" width="273" height="160" alt="Косметика" class="shop__img-four">
+				<img src="img/shop-img-5.jpg" width="298" height="160" alt="Косметика" class="shop__img-five">
+				</div>
+			</div>	
+		</main>
+		<footer class="footer clearfix wrapper">
+			<nav class="menu menu_vertical">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+					<li class="menu__item"><a href="uslugi.html" class="menu__link">Каталог услуг</a></li>
+					<li class="menu__item"><a href="shop.html" class="menu__link">Магазин косметики</a></li>
+					<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="footer-contacts clearfix">
+				<div class="footer-contacts__time">
+					<i class="fa fa-clock-o fa-2x footer-contacts__icon-time"></i>
+					<span class="footer-contacts__time-item">
+						Время работы: 
+						<br>
+						c 9:00 до 21:00
+						<br>
+						без выходных
+					</span>
+				</div>
+				<div class="footer-contacts__phone">
+					<i class="fa fa-phone fa-2x footer-contacts__icon-phone"></i>
+					<span class="footer-contacts__phone-item">
+						+375 (29) 222-22-22
+						<br>
+						+375 (17) 222-22-22
+					</span>
+				</div>
+				<div class="footer-contacts__address">
+					<a href="https://goo.gl/maps/73nk6n2J2C5ci85p6" class="footer-contacts__location">
+						<i class="fa fa-map-marker fa-2x footer-contacts__icon-contacts"></i>
+						<span>Киселёва 10, Минск</span>
+					</a>
+				</div>
+				<div class="footer-contacts__mail">
+					<a href="mailto:mail@prestige.by" target="blank" class="footer-contacts__mail-link">
+						<i class="fa fa-envelope-o fa-2x footer-contacts__icon-mail"></i>mail@prestige.by
+					</a>
+				</div>
+			</div>
+			<div class="social footer_social">
+				<h2 class="social__title">Мы в соцсетях</h2>
+				<ul class="social__icons">
+					<li class="social__button">
+						<a href="https://www.facebook.com/" target="blank" title="facebook" class="social__facebook">
+							<i class="fa fa-facebook-f social__icon"></i>
+						</a>
+					</li>
+					<li class="social__button">
+						<a href="https://vk.com/" target="blank" title="ВКонтакте" class="social__vk">
+							<i class="fa fa-vk social__icon"></i>
+						</a>
+					</li>
+					<li class="social__button">
+						<a href="https://www.pinterest.com/" target="blank" title="pinterest" class="social__pinterest">
+							<i class="fa fa-pinterest-p social__icon"></i>
+						</a>
+					</li>
+					<li class="social__button">
+						<a href="https://www.instagram.com/prestige_plus/?hl=ru" target="blank" title="instagram" class="social__instagram">
+							<i class="fa fa-instagram social__icon"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>	
+	<a id="anchor" class="anchor"> <!--Якорь-->
+		<i class="fa fa-chevron-up anchor-icon"></i>
+	</a> 
+	<a href="#" class="button button_animated" onClick="PopUpShow();"><br>Онлайн<br>запись</a>
+	<div class="form-container" id="message"> <!--идентификатор для скрипта-->
+		<div class="form">
+			<form class="form__body">
+				<h3>
+					Онлайн запись
+				</h3>  
+				<h4 class="form__heading-text">
+					Отправьте сообщение и мы перезвоним Вам в течение 5-ти минут!
+				</h4>
+				<div class="form__input">
+					<input id="name" name="name" type="text" placeholder="Ваше имя" class="form__input-indent">
+				</div>
+				<div class="form__input">
+					<input id="phone" name="phone" type="tel" placeholder="Ваш телефон" class="form__input-indent">
+				</div>
+				<div class="form__input">
+					<input id="email" name="email" type="email" placeholder="Ваш e-mail" class="form__input-indent">
+				</div>
+				<div class="form__input">
+					<textarea placeholder="Ваше сообщение..." class="form__input-indent form__textarea"></textarea>
+				</div>
+				<div class="form__button">
+					<button name="submit" type="button" class="button form__button-send" onclick="PopUpHide();">Отправить</button>
+				</div>
+				<div class="form__close">
+					<button type="button" class="form__close-button" onclick="PopUpHide();">
+						<i class="fa fa-times-circle form__close-icon"></i>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>			
+	<script>
+	$(document).ready(function(){
+		//Скрыть PopUp при загрузке страницы   
+		PopUpHide();
+		$("#message").hide();
+	});
+	//Функция отображения PopUp
+	function PopUpShow(){
+		$("#message").show("slow");
+	}
+	//Функция скрытия PopUp
+	function PopUpHide()
+	{
+		$("#message").hide("slow");
+	}
+	</script>
+		<script>
+		var btn = $('#anchor');
+		
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > 300) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+		
+		btn.on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop:0}, '300');
+		});
+	</script>
+	<script>
+		$(function(){
+  		var width   = 300,
+      	height  = 400,
+      	speed   = 300,
+      	button  = $('.burger__button'),
+      	overlay = $('.overlay'),
+      	menu    = $('.burger-menu');
+
+  	button.on('click',function(e){
+    	if(overlay.hasClass('open')) {
+      	animate_menu('close');
+    	} else {
+      	animate_menu('open');
+    	}
+  	});
+
+  	overlay.on('click', function(e){
+    	if(overlay.hasClass('open')) {
+      	animate_menu('close');
+    	}
+  	});
+
+  	$('a[href="#"]').on('click', function(e){
+    	e.preventDefault();
+  	});
+
+  	function animate_menu(menu_toggle) {
+    	if(menu_toggle == 'open') {
+      	overlay.addClass('open');
+      	button.addClass('on');
+      	overlay.animate({opacity: 1}, speed);
+      	menu.animate({width: width, height: height}, speed);
+    }
+
+    	if(menu_toggle == 'close') {
+      	button.removeClass('on');
+      	overlay.animate({opacity: 0}, speed);
+      	overlay.removeClass('open');
+      	menu.animate({width: "0", height: 0}, speed);
+    	}
+  	}
+	});
+	</script>
+</body>
+</html>

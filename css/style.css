@@ -1,0 +1,1327 @@
+@font-face {
+  font-family: "HeatherScriptOne";
+  src: url("../fonts/heatherscriptone.woff") format("woff"), 
+    url("../fonts/heatherscriptone.woff2") format("woff2"); 
+  font-weight: normal;
+  font-style: normal; 
+}
+
+body {
+	background: url('../img/dust_scratches.png');
+	font-family: 'Ubuntu', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+div.shadow_body {
+	background: #fff;
+	box-shadow: 0px 0px 12px -9px rgba(0,0,0,0.75);
+	max-width:1140px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+  /*header!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.header-first {
+	background: #3c3d42;
+	width: 100%;
+	height: 40px;
+	position: relative;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0 0 4px 4px;
+
+}
+
+.burger {
+	display: none;
+}
+
+.burger__button {
+	position: relative;
+	padding: 20px;
+	width: 40px;
+	height: 40px;
+}
+
+.burger__button:hover {
+	filter: brightness(0.7);
+}
+
+.burger__lines, /*Верхняя линия*/
+.burger__lines:after, /*Нижняя линия*/
+.burger__lines:before { /*Верхняя линия*/
+	position: absolute;
+	width: 26px;
+	height: 3px;
+	background: #efdc8f;
+} 
+
+
+.burger__lines {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.burger__lines:before {
+	content: "";
+	top: -8px;
+}
+
+.burger__lines:after {
+	content: "";
+	top: 8px;
+}
+
+
+
+.header-first__phone {
+	padding: 0 10px;
+}
+
+.header-first__icon {
+	color: rgba(190, 46, 33, 0.5);
+}
+
+.header-first__number {
+	color: rgba(239, 220, 143, 0.7);
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.header-first__address {
+	padding-right: 10px;
+}
+
+.header-first__location {
+	text-decoration: none;
+	color: rgba(239, 220, 143, 0.7);
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.header-first__location:hover {
+	color: #efdc8f;
+	transition: .4s;
+}
+
+.social { 
+	padding: 6px 10px;
+}
+	
+.social__icons {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+	
+.social__icon {
+	padding: 6px;
+}
+	
+.social__button { 
+	display: inline-block;
+	padding-left: 10px;
+}
+	
+.social__facebook {
+	background: rgba(239, 220, 143, 0.5);
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 100px;
+	color: #3c3d42;
+	text-align: center;
+}
+	
+.social__vk {
+	background: rgba(239, 220, 143, 0.5);
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 100px;
+	color: #3c3d42;
+	text-align: center;
+}
+	
+.social__pinterest {
+	background: rgba(239, 220, 143, 0.5);
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 100px;
+	color: #3c3d42;
+	text-align: center;
+}
+	
+.social__instagram {
+	background: rgba(239, 220, 143, 0.5);
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 100px;
+	color: #3c3d42;
+	text-align: center;
+}
+	
+.social__facebook:hover {
+	background: #efdc8f;
+	transition: .4s; 
+}
+	
+.social__vk:hover {
+	background: #efdc8f;
+	transition: .4s;
+}
+	
+.social__pinterest:hover {
+	background: #efdc8f;
+	transition: .4s;
+}
+	
+.social__instagram:hover {
+	background: #efdc8f;
+	transition: .4s;
+}
+
+/*second header!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.header { 
+ background: #e6e6e6;
+ padding: 16px 15px 40px;
+}
+
+.header__logo {
+	width: 220px;
+	margin: 0 auto;
+	padding-top: 8px;
+	padding-bottom: 20px;
+	float: left;
+
+}
+
+.menu {
+	float: left;
+	padding: 18px 40px 0 88px;
+}
+
+.menu__list {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.menu__item {
+	margin-right: 15px;
+	display: inline-block;
+}
+
+.menu__link {
+	text-decoration: none;
+	color: #1b1b1b;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.menu__link:hover {
+	color: #be2e21;
+	text-decoration: underline;
+	transition: .6s;
+}
+
+.menu__link:active {
+	color: #1b1b1b;
+	text-decoration: none; 
+}
+
+.overlay {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  opacity: 0;
+  background-color: rgba(167, 167, 167, 0.06);
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.overlay.open {
+  display: block;
+}
+
+.burger-menu {
+  height: 0;
+  width: 0;
+  background: rgba(60, 61, 66, 0.9);
+  position: fixed;
+  top: 38px;
+  left: 0px;
+  z-index: 100;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.header-first_menu {
+	padding: 0;
+	z-index: 110;
+}
+
+.burger-menu__icon {
+	color: #efdc8f;
+}
+
+.header-first_menu .menu__list {
+	padding-left: 80px;
+}
+
+.header-first_menu .menu__item {
+	text-align: center;
+	margin: 0;
+	padding: 16px 0;
+	display: block;
+}
+
+.header-first_menu .menu__link {
+	color: #efdc8f;
+	font-size: 16px;
+	overflow: hidden;
+	
+}
+
+.header-first_menu .menu__link:hover {
+  cursor: pointer;
+  color: #be2e21;
+}
+
+.header-button {
+	float: right;
+	width: 160px;
+	padding-top: 8px;
+	margin: 0 auto;
+}
+
+.header-button__link {
+	padding: 10px 0;
+	transition: .4s;
+}
+
+.header-button__link:hover {
+	box-shadow: 0 15px 20px rgba(54, 58, 56, 0.4);
+  transform: translateY(-2px);
+	color: #efdc8f;
+ }
+
+.header-button__icon {
+	display: inline-block;
+}
+
+main {
+	min-height: calc(100vh - 260px); /*???Суммируется высота header и footer. Не работает в IE*/
+} 
+
+h3 {
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	color: #be2e21;
+	margin-top: 0;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #6e6e6e;
+}
+
+/*Слайдер!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.slider-box {
+padding-bottom: 5px;
+background: #3c3d42
+}
+
+/*Услуги на главной!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.index-services {
+background: #d3d3d3;
+padding: 16px 30px 40px 46px;
+}
+
+.index-services__barber,
+.index-services__manicure,
+.index-services__face,
+.index-services__massage {
+	width: 25%;
+	padding-top: 20px;
+	padding-right: 16px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.index-services__item-barber {
+	background: #fff url('../img/barber1.jpg') no-repeat center;
+	height: 250px;
+}
+
+.index-services__item-manicure {
+	background: #fff url('../img/manicure.jpg') no-repeat center;
+	height: 250px;
+}
+
+.index-services__item-face {
+	background: #fff url('../img/face.jpg') no-repeat center;
+	height: 250px;
+}
+
+.index-services__item-massage {
+	background: #fff url('../img/massage.jpg') no-repeat center;
+	height: 250px;
+}
+
+.index-services__item_shadow { /*Тень под блоками*/
+	box-shadow: 12px 14px 8px -7px rgba(0,0,0,0.72);
+}
+
+.index-services__button {
+	background: #e6e6e6;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0 25px;
+	position: relative;
+	top: 190px;
+	z-index: 0;
+}
+
+.index-services__link {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3c3d42;
+}
+
+.index-services__link:hover {
+	color: #be2e21;
+	transition: 0.4s;
+}
+
+.index-services__link:active {
+	color: #3c3d42;
+	transition: none;
+}
+
+
+.banner__loreal { 
+	vertical-align: bottom; /*Убираем отступ внизу изображения*/
+	width: 100%;
+}
+
+ /*Buttons!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.button { /*Основная кнопка для всех страниц*/
+	background: #3c3d42;
+	text-align: center;
+	border-radius: 50px;
+	text-decoration: none;
+	color: rgba(239, 220, 143, 0.5);
+	display: block;
+}
+
+.button_animated {
+	width: 70px;
+	height: 70px;
+	border-radius: 100px;
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	box-shadow: 0 5px 20px rgba(54, 58, 56, 0.4);
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+	animation-name: jumping;
+	position: fixed;
+	bottom: 5px;
+	right: 20px;
+	z-index: 1000;
+}
+
+@keyframes jumping {
+	0% {
+		transform: translateY(0px) scale(1,1) rotate(0deg);
+	}
+
+	25% {
+		transform: translateY(-20px) scale(1.2,1.2) rotate(360deg);
+	}
+
+	50% {
+		transform: translateY(0px) scale(1,1) rotate(360deg);
+	}
+
+	100% {
+		transform: translateY(0px) scale(1,1);
+	}
+}
+
+.button_animated:hover {
+ background: #e6e6e6;
+ color: #be2e21;
+ transition: 1s;
+}
+
+
+.button_services {
+	width: 100px;
+	margin-right: 20px;
+	padding: 10px 0;
+	font-size: 12px;
+	transition: .4s;
+	float: right;
+}
+
+.button_services:hover { /*Смещаем кнопку с помощью трансформации и добавляем тень*/
+	color: #efdc8f;	
+	box-shadow: 0 15px 20px rgba(54, 58, 56, 0.4);
+  transform: translateY(-2px);
+}
+
+/*advertising!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.information {
+	margin: 30px 0 20px;
+	padding: 0 20px;
+/*padding: 0 40px;*/
+}
+
+.information__action {
+	width: 50%;
+	float: left;
+	padding-right: 30px;
+	box-sizing: border-box;	
+}
+
+.information__shop {
+	width: 50%;
+	float: right;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+.information__present {
+	width: 50%;
+	float: left;
+	padding: 20px 30px 0 0;
+	box-sizing: border-box;
+}
+
+.information__makeup {
+	width: 50%;
+	float: right;
+	padding: 20px 0 0 30px;
+	box-sizing: border-box;
+}
+
+.information__title {
+	margin-top: 0;
+	font-weight: lighter;
+	color: #be2e21;
+}
+
+.information__text {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.information__image {
+	max-width: 100%;
+	display: block;
+}
+
+
+/*Услуги!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.services {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.services__price {
+	padding-bottom: 40px;
+}
+
+.services__title {
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	color: #be2e21;
+}
+
+.services__wrapper {
+ margin-bottom: 60px;
+ padding-bottom: 20px;
+ border-bottom: 1px solid #e6e6e6;
+}
+
+.services__img-wrapper {
+width: 15%;
+padding-right: 30px;
+float: left;
+box-sizing: border-box;
+}
+
+.services__img {
+	max-width: 100%;
+	height: auto;
+}
+
+.services__text-wrapper {
+	width: 85%;
+	float: left;
+	box-sizing: border-box;
+}
+
+/*Парикмахкрский зал!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.hair-entry {
+	margin: 40px 0;
+	padding: 0 20px;
+}
+
+.hair-entry__title {
+	margin-top: 10px;
+	text-align: center;
+	color: #be2e21;
+	font-weight: lighter;
+}
+
+.hair-price {
+max-width: 570px;
+margin: 60px auto 80px;
+padding: 20px 20px;
+box-shadow: 0px 0px 12px -9px rgba(0,0,0,0.75);
+}
+
+.hair-price__header {
+	display: flex; /*выстраиваем внутренние элементы контейнера в ряд*/
+	margin-bottom: 10px;
+}
+
+.hair-price__title {
+ display: flex;
+ align-items: center;
+ flex-grow: 1; /*Элемент занимает всю доступную ширину контейнера(до следующего элемента)*/
+}
+
+.hair-price__title:after {
+	content: "";
+	border-top: 1px dotted #e6e6e6;
+	margin: 0 10px;
+	flex-grow: 1;
+}
+
+.price-text {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #6e6e6e;
+}
+
+.hair-price__man-hair {
+ margin: 20px 0;
+}
+
+.certificate {
+	margin: 0 80px;
+}
+
+.certificate__action {
+	font-size: 16px;
+	font-style: italic;
+	color: #be2e21;
+	text-align: center;
+}
+
+.certificate__title {
+	text-align: center;
+	padding: 40px 0 20px; 
+}
+
+
+/*О нас!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.about {
+	margin: 40px 20px;
+}
+
+.about__title {
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: lighter;
+	color: #be2e21;
+	padding: 0;
+}
+
+.about__excellence {
+	font-size: 14px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #6e6e6e;
+}
+
+.about__team-title,
+.about__gallery-title {
+	margin-top: 60px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: lighter;
+	color: #be2e21;
+}
+
+.about__team {
+	box-shadow: 12px 14px 8px -7px rgba(0, 0, 0, 0.3);
+
+}
+
+.about__master-name, .about__master-position {
+	max-width: 250px;
+	background: #fff;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.about__master-name {
+	color: #be2e21;
+	font-size: 16px;
+
+}
+
+.about__master-position {
+	color: #6e6e6e;
+	font-size: 14px;
+	margin-top: 10px;
+}
+ 
+.about__gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center
+}
+
+.gallery {
+	padding-left: 5px;
+}
+
+.gallery-link { /*Затемнение при наведении*/
+ position: relative;
+ display: block;
+}
+
+.gallery-link:after { /*Затемнение при наведении*/
+	content: '';
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(0, 0, 0, 0.5);  
+	opacity: 0;
+}
+
+.gallery-link:before { /*Затемнение при наведении*/
+	content: '';
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: rgba(0,0,0,.8);  
+	opacity: 0;
+}
+
+.gallery-link:hover:before,
+.gallery-link:hover:after { /*Затемнение при наведении*/
+	opacity: .2;
+	transition: .4s;
+}
+
+.gallery-link:active:before,
+.gallery-link:active:after {
+	opacity: 0;
+}
+
+/*Контакты!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.contacts {
+	margin: 40px 20px;
+}
+
+.contacts__title {
+	text-align: center;
+	margin-bottom: 40px;;
+}
+
+
+.contacts__map {
+	width: 100%;
+}
+
+.contacts__map iframe {
+	width: 100%;
+}
+
+.contacts__item {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.contacts__item-title {
+font-size: 14px;
+font-weight: lighter;
+text-transform: uppercase;
+color: #6e6e6e;
+text-align: center;
+}
+
+.contacts__item-phone {
+	text-align: center;
+}
+
+.header__contacts-phone_style {
+	color: #6e6e6e;
+}
+ 
+/*Новости!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.news {
+	margin: 40px 20px;;
+}
+
+.news__title {
+	font-weight: lighter;
+	color: #be2e21;
+	font-size: 24px;
+}
+
+.news__title:after {
+	content: "L`Oreal Professionnel.";
+	font-family: 'HeatherScriptOne';
+	font-size: 42px;
+	
+}
+
+.shop__title {
+	text-transform: none;
+	text-align: center;
+	margin-top: 40px;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.shop__product {
+	perspective: 1120px;
+	background: #3c3d42;
+	height: 200px;
+	padding-top: 40px;
+	overflow: hidden;
+
+}
+.shop__spinner {
+	max-width: 400px;
+	height: 160px;
+	margin: 0 auto;
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+	animation-duration: 6s;
+	transform-origin: 180px 0 0;
+  transform-style: preserve-3d;
+}
+.shop__spinner:hover {
+  animation-play-state: paused;
+}
+
+.shop__spinner img {
+	position: absolute;
+  border: 1px solid #ccc;
+  background: rgba(255,255,255,0.8);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+}
+
+.shop__img-one {
+	transform: rotateY(0deg) translateX(180px); 
+	padding-left: 160px;
+}
+
+.shop__img-two {
+	transform: rotateY(-72deg) translateX(180px);
+	padding-left: 147px;
+}
+
+.shop__img-three {
+	transform: rotateY(-144deg) translateX(180px);
+	padding-left: 120px;
+}
+
+.shop__img-four {
+	transform: rotateY(-216deg) translateX(180px);
+	padding-left: 147px;
+}
+
+.shop__img-five {
+	transform: rotateY(-288deg) translateX(180px);
+	padding-left: 122px;	
+}
+
+
+
+/*FOOTER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.footer {
+background: #3c3d42;
+padding: 20px 10px;
+display: flex;
+justify-content: space-between;
+}
+
+.menu_vertical {
+	max-width: 120px;
+	margin: 0 auto;
+	padding-right: 40px; 
+	padding-top: 0;
+ 	padding-left: 0;
+	float: none; 
+	border-right: 1px dashed #efdc8f;
+	display: block;
+}
+
+.menu_vertical .menu__item {
+	display: block;
+	margin-right: 0;
+}
+
+.menu_vertical .menu__list {
+	display: block;
+}
+
+.menu_vertical .menu__link {
+	color: rgba(239, 220, 143, 0.7);
+	font-size: 12px;
+	line-height: 36px;
+	display: block;
+}
+
+.menu_vertical .menu__link:hover {
+	color: #efdc8f;
+	transition: .4s;
+}
+
+.footer-contacts {
+	max-width: 200px;
+	margin: 0 auto;
+	padding: 8px 20px 40px;
+	font-size: 12px;
+	color: rgba(239, 220, 143, 0.7);
+}
+
+.footer-contacts__icon-time {
+	float: left;
+	padding-top: 16px;
+	margin-right: 10px;
+}
+
+.footer-contacts__time-item {
+	padding-left: 35px;
+	line-height: 20px;
+	display: block;
+}
+
+.footer-contacts__phone {
+	margin-top: 20px;
+}
+
+.footer-contacts__icon-phone {
+	float: left;
+	padding-top: 6px;
+	margin-right: 10px;
+}
+
+.footer-contacts__phone-item {
+	padding-left: 35px;
+	line-height: 20px;
+	display: block;
+}
+
+.footer-contacts__address {
+	margin-top: 20px;
+}
+
+.footer-contacts__icon-contacts {
+	margin-right: 18px;
+
+}
+
+.footer-contacts__location {
+	text-decoration: none;
+	color: rgba(239, 220, 143, 0.7);
+	margin-left: 2px;
+}
+
+.footer-contacts__location:hover {
+	color: #efdc8f;
+}
+
+.footer-contacts__mail {
+	margin-top: 20px;
+}
+
+.footer-contacts__icon-mail {
+	margin-right: 18px;
+}
+
+.footer-contacts__mail-link {
+	text-decoration: none;
+	color: rgba(239, 220, 143, 0.7);
+	margin-left: -2px;
+}
+
+.footer-contacts__mail-link:hover {
+	color: #efdc8f;
+}
+
+.footer_social {
+	max-width: 180px;
+	margin: 0 auto;
+	border-left: 1px dashed #efdc8f;
+	padding-left: 40px;
+	padding-right: 0;
+	display: block;
+}
+
+.social__title {
+	font-family: 'HeatherScriptOne';
+	margin: 0;
+	font-size: 26px;
+	font-weight: 500;
+	color: rgba(239, 220, 143, 0.7);
+}
+
+.footer_social .social__icons {
+	padding-top: 40px;
+}
+
+.footer_social .social__icon {
+	padding: 8px;
+}
+
+.footer_social .social__button { 
+	padding-right: 5px;
+	padding-left: 0;
+}
+
+.footer_social .social__facebook {
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+}
+
+.footer_social .social__vk {
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+
+}
+
+.footer_social .social__pinterest {
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+}
+
+.footer_social .social__instagram {
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+}
+
+/*FORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.form-container {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0px;
+	right: 0;	
+	z-index: 1000;
+}
+.form {
+	max-width: 340px;
+	width: 100%;
+	margin: 40px auto 0 auto;
+}
+
+.form__body {
+	background: hsl(0, 0%, 90%);
+	padding: 25px;
+	margin: 50px 0;
+	border-radius: 4px;
+	position: relative;
+}
+
+.form__heading-text {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #6e6e6e;
+}
+
+.form__input {
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+}
+
+.form__input-indent {
+	width: 100%;
+	border: 1px solid #ccc;
+	background: #fff;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+
+.form__input-indent:focus {
+	outline: 0;
+	border: 1px solid #999;
+}
+
+.form__input-indent:hover {
+	transition: 1s;
+	border: 1px solid #888;
+}
+
+.form__textarea {
+	height: 100px;
+	resize: none;
+	font-size: 14px;
+}
+
+.form__button {
+ padding: 20px 0 20px;
+ width: 100%; 
+}
+
+.form__button-send {
+	width: 160px;
+	margin: 0 auto;
+	padding: 10px 0;
+	cursor: pointer;
+	font-size: 12px;
+	outline: 0; /*Убираем рамку вокруг кнопки*/
+	border: 0;
+}
+
+.form__button-send:hover {
+	background: #44454b;
+	font-weight: bolder;
+	transition: 0.2s;
+}
+
+.form__button-send:active {
+	font-weight: normal;
+}
+
+.form__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.form__close-button {
+	background: #e6e6e6;
+	outline: 0;
+	border: 0;
+
+
+}
+
+.form__close-icon {
+	color: #888;
+}
+
+.form__close-icon:hover {
+	color: #4e4c4c;
+	transition: .4s;
+}
+
+.anchor {
+	background: rgba(230, 230, 230, 0.8);
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 4px;
+	margin: 30px;
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	transition: background-color .3s, opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	display: inline-block;
+	z-index: 1000;
+}
+.anchor.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.anchor:hover {
+	background: rgb(216, 216, 216);
+}
+
+
+/*MEDIA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@media (max-width: 1400px) {
+	.button_animated {
+		right: 20px;
+		background: rgba(60, 61, 66, 0.6);
+	}
+}
+@media (max-width: 1100px) {
+ .header-first {
+	 position: fixed;
+ }
+ .burger {
+	 display: block;
+ }
+  .header-first__phone {
+	 padding-left: 0;
+ }
+ .header {
+	 padding-top: 60px;
+ }
+ .menu {
+	 display: none;
+ }
+ .header-first_menu {
+	 display: block;
+ }
+ .menu_vertical {
+		display: block;
+	}
+
+	.header__logo {
+		float: none;
+		padding-right: 80px;
+	}
+	.header-button {
+		float: none;
+		width: 50%;
+	}
+	.header-button__link {
+		padding: 14px 0;
+	}
+.banner__loreal {
+	display: none;
+}	
+.index-services__barber,
+.index-services__manicure,
+.index-services__face,
+.index-services__massage {
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+	}
+.information__action,
+.information__shop,
+.information__present,
+.information__makeup {
+ float: none;
+ width: 100%;
+ padding: 0;
+	}	
+.information__image {
+	margin: 0 auto;
+	}
+.information__title {
+	text-align: center;
+	}
+.information__text {
+	font-size: 14px;
+	}
+.services__img-wrapper {
+	float: none;
+	width: 100%;
+}	
+}
+
+@media (max-width: 660px) {
+	.social {
+		display: none;
+	}
+	.footer_social {
+		display: block;
+	}
+.index-services__barber,
+.index-services__manicure,
+.index-services__face,
+.index-services__massage {
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+	}
+}
+
+@media (max-width: 590px) { 
+	.footer { /*Выстраиваем блоки по вертикали*/
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.menu_vertical {
+		border: none;
+		padding-left: 90px;
+		padding-bottom: 40px;
+	}
+	.social {
+		border: none;
+	}
+}
+
+@media (max-width: 400px) {
+	.header-first__address {
+		display: none;
+	}
+}
+
